@@ -1,8 +1,415 @@
-<html>
-    <head>
-        <title>Labsi</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labsi – Твоето здравно досие</title>
+  <meta name="description" content="Labsi е приложение, в което следиш резултатите от своите лабораторни изследвания и получаваш експертна информация за здравното си състояние.">
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="top">
+    <div class="container">
+      <a href="/" class="header-logo">
+        <img src="images/logo.png" alt="Labsi" width="40" height="40">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#">Начало</a>
+        <a href="#team">Контакти</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
         <h1>Labsi</h1>
-    </body>
+        <p class="hero-subtitle">Твоето здравно досие</p>
+        <p class="hero-description">Labsi е приложение, в което следиш резултатите от своите лабораторни изследвания и получаваш експертна информация за здравното си състояние.</p>
+        <ul class="hero-checks">
+          <li>Съхрани изследванията си</li>
+          <li>Следи за промени в здравето ти</li>
+          <li>Получи здравни насоки</li>
+        </ul>
+        <div class="hero-buttons">
+          <a href="https://apps.apple.com/app/labsi/id6466749754" target="_blank" rel="noopener" class="store-btn">
+            <i class="fa-brands fa-apple"></i>
+            <div>
+              <div class="store-label">Download on the</div>
+              <div class="store-name">App Store</div>
+            </div>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.labsi.labsi_mobile_app" target="_blank" rel="noopener" class="store-btn">
+            <i class="fa-brands fa-google-play"></i>
+            <div>
+              <div class="store-label">GET IT ON</div>
+              <div class="store-name">Google Play</div>
+            </div>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <i class="fa-solid fa-circle-user"></i>
+            <div class="hero-stat-number">1000+</div>
+            <div class="hero-stat-label">ПОТРЕБИТЕЛИ</div>
+          </div>
+          <div class="hero-stat">
+            <i class="fa-solid fa-file-medical"></i>
+            <div class="hero-stat-number">3000+</div>
+            <div class="hero-stat-label">ОБРАБОТЕНИ<br />ДОКУМЕНТА</div>
+          </div>
+          <div class="hero-stat">
+            <i class="fa-solid fa-star"></i>
+            <div class="hero-stat-number">5/5</div>
+            <div class="hero-stat-label">РЕЙТИНГ</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/brochure.png" alt="Labsi мобилно приложение" width="380" height="537">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Какво казват потребителите</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="images/vesela.png" alt="Весела" class="testimonial-avatar" width="56" height="56">
+            <div>
+              <div class="testimonial-name">Весела @vesela.savova</div>
+              <div class="testimonial-role">Автор на кулинарни книги</div>
+            </div>
+          </div>
+          <p class="testimonial-quote">"Систематизира и извлича, като съхранява и анализира резултатите от лабораторни изследвания. Следи кривата на промяна на резултатите. Много полезно за хора, които следят показателите си често. Удобно и лесно за ползване, без хартиени носители, всичко е в телефона."</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="images/ani.png" alt="Ани" class="testimonial-avatar" width="56" height="56">
+            <div>
+              <div class="testimonial-name">Aни @healthylicious</div>
+              <div class="testimonial-role">Хранителен терапевт</div>
+            </div>
+          </div>
+          <p class="testimonial-quote">"Labsi изключително много ме улеснява, като ми позволява да следя резултатите си и да виждам промени в тях - нещо изключително важно за човек, като мен, който се налага да прави често изследвания"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== How It Works ===== -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">Как работи Labsi</h2>
+      <div class="steps">
+        <div class="step">
+          <img src="images/step-scan.gif" alt="Сканираш" width="160" height="160">
+          <div class="step-label">Сканираш</div>
+        </div>
+        <div class="step-arrow"><img src="images/arrow-right.gif" alt="" width="40" height="40"></div>
+        <div class="step">
+          <img src="images/step-process.gif" alt="Обработваме" width="160" height="160">
+          <div class="step-label">Обработваме</div>
+        </div>
+        <div class="step-arrow"><img src="images/arrow-right.gif" alt="" width="40" height="40"></div>
+        <div class="step">
+          <img src="images/step-analyze.gif" alt="Анализираме" width="160" height="160">
+          <div class="step-label">Анализираме</div>
+        </div>
+        <div class="step-arrow"><img src="images/arrow-right.gif" alt="" width="40" height="40"></div>
+        <div class="step">
+          <img src="images/step-recommend.gif" alt="Препоръчваме" width="160" height="160">
+          <div class="step-label">Препоръчваме</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="features section-alt" id="features">
+    <div class="container">
+      <h2 class="section-title">Как мога да подобря здравето си с Labsi</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <img src="images/feature-1.png" alt="Съхрани всички резултати на едно място" width="930" height="620">
+          <h3>Съхрани всички резултати на едно място</h3>
+        </div>
+        <div class="feature-card">
+          <img src="images/feature-2.png" alt="Виж как здравето ти се променя във времето" width="930" height="620">
+          <h3>Виж как здравето ти се променя във времето</h3>
+        </div>
+        <div class="feature-card">
+          <img src="images/feature-3.png" alt="Получи персонализирани препоръки, захранвани от AI" width="930" height="620">
+          <h3>Получи персонализирани препоръки, захранвани от AI</h3>
+        </div>
+        <div class="feature-card">
+          <img src="images/feature-4.png" alt="Лесно споделяне на данните ти с лекар" width="930" height="620">
+          <h3>Лесно споделяне на данните ти с лекар</h3>
+        </div>
+        <div class="feature-card">
+          <img src="images/feature-5.png" alt="Бързо качване на документи от любимата ти лаборатория" width="930" height="620">
+          <h3>Бързо качване на документи от любимата ти лаборатория</h3>
+        </div>
+        <div class="feature-card">
+          <img src="images/feature-6.png" alt="Създай профили на близките си" width="930" height="620">
+          <h3>Създай профили на близките си</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Supporters ===== -->
+  <section class="supporters section" id="supporters">
+    <div class="container">
+      <h2 class="section-title">Ние сме подкрепени от</h2>
+      <div class="supporters-logos">
+        <img src="images/supporter-able.webp" alt="ABLE" width="200" height="55">
+        <img src="images/supporter-2.png" alt="Подкрепа" width="100" height="100">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq section-alt" id="faq">
+    <div class="container">
+      <h2 class="section-title">Често задавани въпроси</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Какво представлява Labsi?</summary>
+          <div class="faq-answer">Labsi е твоето здравно досие – мобилно приложение, в което следиш лабораторните си резултати, проследяваш промени във времето и получаваш персонализирани насоки.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Кой чете резултатите и как се прави анализът?</summary>
+          <div class="faq-answer">Резултатите се анонимизират и анализират от изкуствен интелект. Приложението проследява как се променят във времето и дали са в норма.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Взима ли се предвид моята лична история?</summary>
+          <div class="faq-answer">Да, за здравният доклад използваме информацията от всички твои качени изследвания, както и информация за пол и възраст, за да осигурим точен анализ и препоръки.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Мога ли да следя за промяна в здравето ми?</summary>
+          <div class="faq-answer">Да. Приложението визуализира как се променят показателите ти с времето – с графики и ясно отбелязани референтни стойности.</div>
+        </details>
+        <details class="faq-item">
+          <summary>В безопасност ли са данните ми?</summary>
+          <div class="faq-answer">Да, данните се обработват анонимно и се съхраняват сигурно. Не се споделят с трети лица без твоето съгласие.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Мога ли да споделям резултатите с лекар?</summary>
+          <div class="faq-answer">Да – можеш директно да споделяш изследванията си и графиките на показателите си с лекар или познат, директно от приложението.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Какви препоръки получавам?</summary>
+          <div class="faq-answer">Персонализирани насоки, базирани на стойностите на твоите показатели, твоят пол и възраст. Не заместват мнението на лекар.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Мога ли да следя здравето на близките си?</summary>
+          <div class="faq-answer">Да – можеш да създаваш профили за деца, родители или партньори и да качваш техни изследвания.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Media ===== -->
+  <section class="media section" id="media">
+    <div class="container">
+      <h2 class="section-title">За нас в медиите</h2>
+      <div class="media-logos">
+        <a href="https://businessnovinite.bg/korporativni-istorii/izkustvenijat-intelekt-i-grizhata-za-zdraveto-balgarsko-ai-prilozhenie-analizira-medicinski-izsledvanija.html" target="_blank" rel="noopener">
+          <img src="images/media-btv.png" alt="BTV" width="200" height="51">
+        </a>
+        <a href="https://www.bloombergtv.bg/a/28-update/147608-ai-sas-sigurnost-ima-potentsial-da-promeni-iz-osnovi-zdraveopazvaneto" target="_blank" rel="noopener">
+          <img src="images/media-bloomberg.png" alt="Bloomberg TV Bulgaria" width="200" height="53">
+        </a>
+        <a href="https://www.bgonair.bg/a/36-sutreshen-blok/398230-prilozhenie-s-ai-razchita-rezultatite-ot-izsledvaniyata-ni" target="_blank" rel="noopener">
+          <img src="images/media-bgonair.png" alt="BG On Air" width="200" height="53">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Team ===== -->
+  <section class="team section-alt" id="team">
+    <div class="container">
+      <h2 class="section-title">Кои сме ние</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="images/team-nikolay.png" alt="Николай Матеев" width="200" height="200">
+          <h3>Николай Матеев</h3>
+          <p class="team-role">Software Engineer</p>
+          <a href="https://www.linkedin.com/in/nikolay-mateev" target="_blank" rel="noopener" class="linkedin-link">
+            <i class="fa-brands fa-linkedin-in"></i>
+            LinkedIn
+          </a>
+        </div>
+        <div class="team-card">
+          <img src="images/team-ivan.jpg" alt="Иван Даниелов Иванов" width="200" height="200">
+          <h3>Иван Даниелов Иванов</h3>
+          <p class="team-role">Data Scientist</p>
+          <a href="https://www.linkedin.com/in/ivandanielov" target="_blank" rel="noopener" class="linkedin-link">
+            <i class="fa-brands fa-linkedin-in"></i>
+            LinkedIn
+          </a>
+        </div>
+        <div class="team-card">
+          <img src="images/team-katerina.jpg" alt="Катерина Колева" width="200" height="200">
+          <h3>Катерина Колева</h3>
+          <p class="team-role">Product Manager</p>
+          <a href="https://www.linkedin.com/in/katerinakoleva" target="_blank" rel="noopener" class="linkedin-link">
+            <i class="fa-brands fa-linkedin-in"></i>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="team-mission">
+        <h3>Нашата мисия</h3>
+        <p>Да дадем възможност на хората да следят и разберат здравното си състояние по лесен и удобен начин</p>
+        <br>
+        <h3>Нашата визия</h3>
+        <p>Да помогнем на хората да живеят по-спокоен, здравословен и информиран живот.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-contact">
+        <h4>Контакти</h4>
+        <p>България, София</p>
+        <p><a href="mailto:info@labsi.eu">info@labsi.eu</a></p>
+      </div>
+      <div class="footer-links">
+        <h4>Правна информация</h4>
+        <ul>
+          <li><a href="privacy.html">Поверителност</a></li>
+          <li><a href="privacy-mobile-app.html">Поверителност – Мобилно приложение</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Последвайте ни</h4>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/labsi.eu" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/labsi.eu" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/labsi" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        &copy; <script>document.write(new Date().getFullYear())</script> Labsi. Всички права запазени.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Cookie Banner ===== -->
+  <div class="cookie-banner" id="cookieBanner">
+    <h4>Бисквитки</h4>
+    <p>Използваме бисквитки, за да подобрим Вашето изживяване на сайта. Можете да приемете всички, да откажете или да персонализирате предпочитанията си.</p>
+    <div class="cookie-buttons">
+      <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Приеми всички</button>
+      <button class="cookie-btn cookie-btn-reject" id="cookieReject">Откажи всички</button>
+      <button class="cookie-btn cookie-btn-customize" id="cookieCustomize">Персонализирай</button>
+    </div>
+    <div class="cookie-categories" id="cookieCategories">
+      <div class="cookie-category">
+        <label>Необходими</label>
+        <input type="checkbox" checked disabled>
+      </div>
+      <div class="cookie-category">
+        <label>Аналитични</label>
+        <input type="checkbox" id="cookieAnalytics" checked>
+      </div>
+      <button class="cookie-save" id="cookieSave">Запази предпочитанията</button>
+    </div>
+  </div>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    // Mobile nav toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+
+    // Close nav on link click
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        nav.classList.remove('active');
+      });
+    });
+
+    // Cookie consent
+    const banner = document.getElementById('cookieBanner');
+    const categories = document.getElementById('cookieCategories');
+    const analyticsCheckbox = document.getElementById('cookieAnalytics');
+
+    function loadGA() {
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-E77FW6PMGH';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-E77FW6PMGH', {
+        forceSSL: true,
+        link_attribution: true
+      });
+    }
+
+    function setConsent(analytics) {
+      localStorage.setItem('cookieConsent', JSON.stringify({ necessary: true, analytics: analytics }));
+      banner.classList.remove('visible');
+      if (analytics) loadGA();
+    }
+
+    // Check existing consent
+    const consent = localStorage.getItem('cookieConsent');
+    if (!consent) {
+      banner.classList.add('visible');
+    } else {
+      const prefs = JSON.parse(consent);
+      if (prefs.analytics) loadGA();
+    }
+
+    document.getElementById('cookieAccept').addEventListener('click', () => setConsent(true));
+    document.getElementById('cookieReject').addEventListener('click', () => setConsent(false));
+    document.getElementById('cookieCustomize').addEventListener('click', () => {
+      categories.classList.toggle('visible');
+    });
+    document.getElementById('cookieSave').addEventListener('click', () => {
+      setConsent(analyticsCheckbox.checked);
+    });
+  </script>
+
+</body>
 </html>
