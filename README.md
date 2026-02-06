@@ -1,2 +1,1 @@
-# labsi-eu..github.io
-Labsi Landing Page
+# Labsi Landing Page
