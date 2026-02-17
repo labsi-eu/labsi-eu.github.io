@@ -624,9 +624,9 @@ p {
 }
 
 .team-card img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 300px;
+  height: 350px;
+  border-radius: var(--radius-card);
   object-fit: cover;
   margin: 0 auto 20px;
 }
